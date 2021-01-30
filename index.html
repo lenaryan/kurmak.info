@@ -21,7 +21,7 @@
             <div class="container banner__container">
                 <h1>Ты можешь сделать мир доступным</h1>
                 <p class="banner__text text">А&nbsp;мы тебе поможем. <a href="#" class="color--mint">Обучим</a> дизайнеров, разработчиков и&nbsp;исследователей. <a href="#" class="color--mint">Проводим аудит</a> цифровой доступности и&nbsp;констультируем компании.</p>
-                <a href="#">Написать нам</a>
+                <a href="#write" class="btn banner__btn">Написать нам</a>
             </div>
         </section>
         <section class="reasons section">
@@ -81,18 +81,27 @@
         <section class="why-me section">
             <div class="container">
                 <h2>почему я</h2>
-                <div>
-                    <img src="" alt="Валерия Курмак">
-                    <div>
-                        <p>За&nbsp;4&nbsp;года работы в&nbsp;Сберабнке провела самое большое исследование о&nbsp;людях с&nbsp;инвалидностью в&nbsp;России, разработала руководство по&nbsp;цифровой доступности для&nbsp;группы компаний Сбера, внедрила доступность в&nbsp;процессы разработки и&nbsp;дизайн-систему.</p>
-                        <p>В&nbsp;качестве приглашенного лектора обучаю студентов проектированию цифровой доступности BHSD и&nbsp;веду канал об&nbsp;инклюзивном дизайне «Не&nbsp;исключение».</p>
-                    </div>
+                <div class="why-me__content">
+                    <img src="./images/valeriya-kurmak.jpg" alt="Валерия Курмак" class="why-me__img">
+                    <p class="why-me__text">За&nbsp;4&nbsp;года работы в&nbsp;Сбербанке провела самое большое исследование о&nbsp;людях с&nbsp;инвалидностью в&nbsp;России, разработала руководство по&nbsp;цифровой доступности для&nbsp;группы компаний Сбера, внедрила доступность в&nbsp;процессы разработки и&nbsp;дизайн-систему.</p>
+                    <p class="why-me__text">В&nbsp;качестве приглашенного лектора обучаю студентов проектированию цифровой доступности BHSD и&nbsp;веду канал об&nbsp;инклюзивном дизайне «Не&nbsp;исключение».</p>
                 </div>
             </div>
         </section>
-        <section class="write section">
+        <section class="write section" id="write">
             <div class="container">
                 <h2>пишите</h2>
+                <form action="" class="main-form">
+                    <div class="main-form__field main-form__field--first">
+                        <label for="email" class="main-form__label">Электронная почта</label>
+                        <input id="email" type="email" class="main-form__input">
+                    </div>
+                    <div class="main-form__field main-form__field--last">
+                        <label for="question" class="main-form__label">Что интересно?</label>
+                        <textarea id="question" cols="30" rows="4" placeholder="Вопрос, предложение или отзыв" class="main-form__input"></textarea>
+                    </div>
+                    <button class="btn write__btn">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
