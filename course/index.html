@@ -9,14 +9,36 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a href="../" class="nav__item nav__item--logo color--mint" aria-label="Перейти на главную страницу">kurmak.info</a>
-                <a href="course/" class="nav__item">Курс</a>
+            <nav class="nav color--dark">
+                <a href="../" class="nav__item nav__item--logo" aria-label="Перейти на главную страницу">kurmak.info</a>
+                <a href="" class="nav__item">Курс</a>
                 <a href="#" class="nav__item">Связаться</a>
             </nav>
         </div>
     </header>
     <main>
+        <section class="course-top" role="banner">
+            <div class="container course-top__container">
+                <h1 class="course-top__heading">курс про цифровую доступность</h1>
+                <p class="course-top__sub">от&nbsp;Валерии Курмак</p>
+                <a href="" class="btn btn--dark">Оплатить курс</a>
+            </div>
+        </section>
+        <section class="course-info">
+            <div class="container">
+                <h3 class="course-info__heading">Узнай и&nbsp;систематизируй знания о&nbsp;том, как делать сайты и&nbsp;приложения доступными для незрячих и&nbsp;других людей с&nbsp;инвалидностью.</h3>
+                <p class="course-info__par">На&nbsp;одной конференции рассказала разработчикам Viber, что в&nbsp;обновленной версии кнопка «отправить» в&nbsp;коде не&nbsp;подписана. Это сделало новую версию недоступной для незрячих. Уже на&nbsp;следующий день ребята подписали кнопку и&nbsp;приложение снова стало доступным!</p>
+                <p class="course-info__par course-info__par--mb">В&nbsp;Сбербанке вместе с&nbsp;дизайнерами увеличили контрастность текста. Интерфейс стал доступным для слабовидящих, а&nbsp;компания сэкономила, не&nbsp;делая отдельную бесполезную версию.</p>
+                <h3 class="course-info__heading course-info__heading--mb">Полная программа курса</h3>
+                <form action="" class="course-form">
+                    <label for="course-email" class="course-form__label">Электронная почта</label>
+                    <div class="course-form__fields">
+                        <input id="course-email" type="email" class="course-form__email">
+                        <button type="submit" class="btn btn--mint course-form__btn">Получить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
         <section class="about section">
             <div class="container">
                 <h2>о курсе</h2>
@@ -55,7 +77,7 @@
                         <label for="question" class="main-form__label">Что интересно?</label>
                         <textarea id="question" cols="30" rows="4" placeholder="Вопрос, предложение или отзыв" class="main-form__input"></textarea>
                     </div>
-                    <button type="submit" class="btn write__btn">Отправить</button>
+                    <button type="submit" class="btn btn--mint write__btn">Отправить</button>
                 </form>
             </div>
         </section>
