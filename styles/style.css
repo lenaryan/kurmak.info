@@ -95,6 +95,7 @@ p {
     text-decoration: none;
     border: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn--mint {
@@ -409,6 +410,25 @@ p {
     font-size: 2em;
     margin-bottom: 10px;
     display: block;
+}
+
+.course-form__fields {
+    display: flex;
+}
+
+.course-form__email {
+    width: 480px;
+    border: 2px solid rgba(0,0,0,0.65);
+    border-radius: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.course-form__btn {
+    padding: 20px 70px;
+    line-height: 1.8;
 }
 
 /* about */
