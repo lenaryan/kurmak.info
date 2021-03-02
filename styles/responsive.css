@@ -10,6 +10,15 @@
 }
 
 @media (max-width: 960px) {
+    h1 {
+        font-size: 8em;
+        margin-bottom: 50px;
+    }
+
+    .banner__text {
+        margin-bottom: 80px;
+    }
+
     h2 {
         font-size: 8em;
         margin-bottom: 40px;
@@ -58,6 +67,38 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding-top: 100px;
+    }
+
+    .course-top {
+        padding-bottom: 150px;
+    }
+
+    .reasons,
+    .why-me {
+        padding-bottom: 120px;
+    }
+
+    .write {
+        padding-bottom: 80px;
+    }
+
+    .course-info {
+        padding-top: 110px;
+    }
+
+    .about,
+    .empathy,
+    .logos,
+    .team {
+        padding-bottom: 140px;
+    }
+
+    .reviews {
+        padding-bottom: 50px;
+    }
+
     .why-me__content {
         grid-template-columns: 1fr;
     }
@@ -97,9 +138,17 @@
         right: -15%;
         z-index: 1;
     }
+
+    .course-top__heading {
+        width: 85%;
+    }
 }
 
 @media (max-width: 640px) {
+    h1 {
+        font-size: 6em;
+    }
+
     .limit {
         max-width: initial;
     }
@@ -126,9 +175,22 @@
         top: 35%;
         right: -12%;
     }
+
+    .course-top__heading {
+        margin-bottom: 25px;
+    }
+
+    .course-top__sub {
+        font-size: 2.7em;
+    }
 }
 
 @media (max-width: 480px) {
+    h1 {
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+
     h2 {
         font-size: 5em;
     }
@@ -141,6 +203,24 @@
         font-size: 2.4em;
     }
 
+    .section {
+        padding-top: 60px;
+    }
+
+    .course-top {
+        padding-top: 225px;
+        padding-bottom: 70px;
+    }
+
+    .course-top__btn {
+        width: 100%;
+    }
+
+    .course-info {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
     .nav__item {
         font-size: 1.6em;
     }
@@ -151,8 +231,33 @@
         padding: 10px 65px;
     }
 
+    .about,
+    .empathy,
+    .logos {
+        padding-bottom: 120px;
+    }
+
+    .reviews,
+    .why-me {
+        padding-bottom: 100px;
+    }
+
+    .team {
+        padding-bottom: 155px;
+    }
+
+    .banner {
+        padding-top: 185px;
+        padding-bottom: 50px;
+    }
+
+    .reasons {
+        padding-bottom: 80px;
+    }
+
     .banner__text {
         font-size: 1.6em;
+        margin-bottom: 60px;
     }
 
     .reason-list__num {
@@ -298,6 +403,15 @@
     .logos__img--logo,
     .logos__img--wrike {
         margin-bottom: 20px;
+    }
+
+    .course-top__heading {
+        margin-bottom: 15px;
+    }
+
+    .course-top__sub {
+        font-size: 2.4em;
+        margin-bottom: 70px;
     }
 }
 
