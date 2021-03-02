@@ -160,12 +160,12 @@ p {
 .banner {
     background: var(--dark);
     color: white;
+    padding-top: 240px;
+    padding-bottom: 150px;
 }
 
 .banner__container {
     text-align: center;
-    padding-top: 240px;
-    padding-bottom: 150px;
 }
 
 .banner__text {
@@ -320,7 +320,8 @@ p {
     font-family: inherit;
     font-size: 2em;
     line-height: 1.8;
-    color: rgba(18, 18, 18, 0.65)
+    color: rgba(18, 18, 18, 0.65);
+    border: none;
 }
 
 /* footer */
@@ -361,9 +362,6 @@ p {
 
 .course-top {
     background-color: var(--mint);
-}
-
-.course-top__container {
     padding-top: 270px;
     padding-bottom: 120px;
 }

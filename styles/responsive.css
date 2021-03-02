@@ -10,9 +10,17 @@
 }
 
 @media (max-width: 960px) {
-    h2,
+    h2 {
+        font-size: 8em;
+        margin-bottom: 40px;
+    }
+
     .empathy__title {
         font-size: 8em;
+    }
+
+    .why-me__content {
+        grid-template-columns: 1fr 1fr;
     }
 
     .about__content {
@@ -50,6 +58,19 @@
 }
 
 @media (max-width: 768px) {
+    .why-me__content {
+        grid-template-columns: 1fr;
+    }
+
+    .why-me__img {
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .why-me__text {
+        margin-top: 0;
+    }
+
     .about__content {
         grid-template-columns: 1fr;
         grid-gap: 80px;
@@ -75,5 +96,223 @@
         left: auto;
         right: -15%;
         z-index: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .limit {
+        max-width: initial;
+    }
+
+    .course-form__fields {
+        flex-wrap: wrap;
+        max-width: 480px;
+    }
+
+    .course-form__email {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .course-form__btn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .empathy__img {
+        width: 250px;
+        top: 35%;
+        right: -12%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 5em;
+    }
+
+    .empathy__title {
+        font-size: 5em;
+    }
+
+    h3 {
+        font-size: 2.4em;
+    }
+
+    .nav__item {
+        font-size: 1.6em;
+    }
+
+    .btn {
+        font-size: 1.6em;
+        line-height: 2.2;
+        padding: 10px 65px;
+    }
+
+    .banner__text {
+        font-size: 1.6em;
+    }
+
+    .reason-list__num {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+    }
+
+    .reason-list__text {
+        font-size: 1.6em;
+    }
+
+    .limit {
+        margin-top: 25px;
+        grid-gap: 20px;
+    }
+
+    .limit__type {
+        font-size: 1.3em;
+    }
+
+    .limit__pic {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+    .limit__title {
+        font-size: 1.3em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .why-me__content {
+        grid-gap: 30px;
+    }
+
+    .why-me__text {
+        font-size: 1.6em;
+    }
+
+    .main-form__label {
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
+
+    .main-form__input {
+        padding: 15px;
+        font-size: 1.6em;
+    }
+
+    .main-form__field--first {
+        margin-bottom: 25px;
+    }
+
+    .main-form__field--last {
+        margin-bottom: 30px;
+    }
+
+    textarea.main-form__input {
+        height: 100px;
+        box-sizing: border-box;
+    }
+
+    .write__btn {
+        width: 100%;
+    }
+
+    .footer__title {
+        font-size: 2.4em;
+    }
+
+    .footer__text {
+        font-size: 1.6em;
+    }
+
+    .footer__link {
+        margin-right: 25px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .course-info__heading {
+        line-height: 1.5;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    .course-info__par {
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+
+    .course-info__heading--mb {
+        margin-bottom: 20px;
+    }
+
+    .course-form__label {
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
+
+    .course-form__email {
+        padding: 15px;
+        font-size: 1.6em;
+    }
+
+    .about__left-par {
+        font-size: 1.6em;
+        line-height: 1.5;
+    }
+
+    .about__left-par--mb {
+        margin-bottom: 25px;
+    }
+
+    .about__content {
+        grid-gap: 60px;
+    }
+
+    .about__right-par {
+        font-size: 1.6em;
+    }
+
+    .empathy__text {
+        font-size: 1.6em;
+        position: relative;
+        z-index: 2;
+    }
+
+    .empathy__container {
+        grid-gap: 45px;
+    }
+
+    .empathy__img {
+        width: 150px;
+        top: 34%;
+        right: -10%;
+    }
+
+    .logos__img--logo,
+    .logos__img--wrike {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .limit__pic {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .limit__title {
+        font-size: 1.1em;
+        margin-bottom: 0;
+    }
+
+    .limit__type {
+        font-size: 1.1em;
     }
 }
