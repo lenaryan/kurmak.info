@@ -164,6 +164,31 @@ p {
     color: white;
     padding-top: 240px;
     padding-bottom: 150px;
+    position: relative;
+}
+
+.banner__eye {
+    position: absolute;
+    right: 0;
+    top: 7%;
+    display: block;
+    width: 25vw;
+    z-index: 1;
+    animation: scaleEye 4s ease-in-out infinite;
+}
+
+@keyframes scaleEye {
+    0% {
+        transform: scale(1);
+    }
+
+    45%, 55% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .banner__container {
@@ -174,6 +199,8 @@ p {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .banner__text {

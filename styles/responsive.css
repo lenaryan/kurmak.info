@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+    .banner__eye {
+        top: 10%;
+    }
+    
     .reason-list {
         grid-template-columns: 1fr;
         grid-gap: 60px;
@@ -13,6 +17,10 @@
     h1 {
         font-size: 8em;
         margin-bottom: 50px;
+    }
+
+    .banner__eye {
+        right: -40px;
     }
 
     .banner__text {
@@ -67,6 +75,10 @@
 }
 
 @media (max-width: 768px) {
+    .banner__eye {
+        width: 190px;
+    }
+    
     .section {
         padding-top: 100px;
     }
@@ -189,6 +201,10 @@
     h1 {
         font-size: 4em;
         margin-bottom: 30px;
+    }
+
+    .banner__eye {
+        width: 160px;
     }
 
     h2 {
