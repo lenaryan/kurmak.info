@@ -3,6 +3,7 @@
     --dark-grey: #313131;
     --mint: #95FCDE;
     --mint-hover: #6fe2c1;
+    --offset: calc((100vw - 1160px) / 2);
 }
 
 @font-face{font-family:'Inter';src:url(../fonts/Inter-Regular.ttf) format("ttf");font-weight:400;font-style:normal;font-display:swap}
@@ -556,6 +557,77 @@ p {
     padding-bottom: 70px;
 }
 
+.reviews__wrap {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--offset);
+}
+
+.reviews__wrap::before,
+.reviews__wrap::after {
+    content: '';
+    display: block;
+    width: var(--offset);
+}
+
+.review {
+    background-color: white;
+    color: var(--dark);
+    border-radius: 20px;
+    padding: 40px;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.review:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.review::marker {
+    color: transparent;
+}
+
+.review__info {
+    display: flex;
+    align-items: center;
+}
+
+.review__text {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.review__pic {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #c4c4c4;
+    margin-right: 20px;
+}
+
+.review__author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review__name {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.review__job {
+    margin-bottom: 0;
+}
+
+.reviews__wrap {
+    display: flex;
+}
+
 /* logos */
 
 .logos {
@@ -567,9 +639,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
 }
 
-.logos__img {
+.logos__wrap {
     margin: 0 30px;
 }
 

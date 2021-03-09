@@ -4,7 +4,6 @@
     }
     
     .reason-list {
-        grid-template-columns: 1fr;
         grid-gap: 60px;
     }
 
@@ -32,6 +31,10 @@
         margin-bottom: 40px;
     }
 
+    .reason-list {
+        grid-template-columns: 1fr;
+    }
+
     .empathy__title {
         font-size: 8em;
     }
@@ -53,11 +56,7 @@
         width: 365px;
     }
 
-    .logos__container {
-        flex-wrap: wrap;
-    }
-
-    .logos__img {
+    .logos__wrap {
         margin: 0 20px;
     }
 
@@ -245,6 +244,10 @@
         font-size: 1.6em;
         line-height: 2.2;
         padding: 10px 65px;
+    }
+
+    .logos__container {
+        max-width: 100%;
     }
 
     .about,
