@@ -2,6 +2,10 @@
     .banner__eye {
         top: 10%;
     }
+
+    .course-top {
+        background-position: right center;
+    }
     
     .reason-list {
         grid-gap: 60px;
@@ -84,6 +88,7 @@
 
     .course-top {
         padding-bottom: 150px;
+        background-size: 250px;
     }
 
     .reasons,
@@ -225,6 +230,8 @@
     .course-top {
         padding-top: 225px;
         padding-bottom: 70px;
+        background-size: 200px;
+        background-position: 110% center;
     }
 
     .course-top__btn {
@@ -431,6 +438,12 @@
     .course-top__sub {
         font-size: 2.4em;
         margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+    .course-top {
+        background-position: calc(100% + 80px) center;
     }
 }
 

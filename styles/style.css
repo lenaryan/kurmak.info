@@ -150,6 +150,7 @@ p {
 .nav__item--logo {
     padding-left: 0;
     margin-right: auto;
+    margin-left: 0;
 }
 
 .nav__item:hover,
@@ -400,6 +401,9 @@ p {
     background-color: var(--mint);
     padding-top: 270px;
     padding-bottom: 120px;
+    background-image: url(../images/figures.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .course-top__heading {
