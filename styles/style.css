@@ -126,9 +126,9 @@ p {
 
 .slider {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 var(--offset);
+    overflow-x: scroll;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
 }
 
 .slider::-webkit-scrollbar {
@@ -144,6 +144,10 @@ p {
 
 .slide {
     scroll-snap-align: start;
+}
+
+.slider.active {
+    scroll-snap-type: unset;
 }
 
 /* header */
