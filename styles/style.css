@@ -122,6 +122,30 @@ p {
     opacity: 0.9;
 }
 
+/* slider */
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--offset);
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider::before,
+.slider::after {
+    content: '';
+    display: block;
+    width: var(--offset);
+}
+
+.slide {
+    scroll-snap-align: start;
+}
+
 /* header */
 
 .header {
@@ -561,19 +585,6 @@ p {
     padding-bottom: 70px;
 }
 
-.reviews__wrap {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 var(--offset);
-}
-
-.reviews__wrap::before,
-.reviews__wrap::after {
-    content: '';
-    display: block;
-    width: var(--offset);
-}
-
 .review {
     background-color: white;
     color: var(--dark);
@@ -584,7 +595,6 @@ p {
     flex-direction: column;
     min-width: 480px;
     box-sizing: border-box;
-    scroll-snap-align: start;
 }
 
 .review:not(:last-of-type) {
@@ -628,10 +638,6 @@ p {
     margin-bottom: 0;
 }
 
-.reviews__wrap {
-    display: flex;
-}
-
 /* logos */
 
 .logos {
@@ -657,4 +663,32 @@ p {
     background: var(--dark);
     color: white;
     padding-bottom: 230px;
+}
+
+.person {
+    min-width: 270px;
+}
+
+.person:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.person__name {
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.person__description {
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+.person__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
 }

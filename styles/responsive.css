@@ -439,6 +439,34 @@
         font-size: 2.4em;
         margin-bottom: 70px;
     }
+
+    .review {
+        min-width: 240px;
+        padding: 30px 20px;
+        font-size: 1.6em;
+    }
+
+    .review:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    .review__pic {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .person {
+        min-width: 220px;
+    }
+
+    .person__name {
+        font-size: 1.6em;
+    }
+
+    .person__description {
+        font-size: 1.4em;
+    }
 }
 
 @media (max-width: 420px) {
