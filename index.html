@@ -15,6 +15,28 @@
                 <a href="" class="nav__item nav__item--logo color--mint" aria-label="Перейти на главную страницу">kurmak.info</a>
                 <a href="course/" class="nav__item mob-hide">Курс</a>
                 <a href="#write" class="nav__item mob-hide">Связаться</a>
+                <button id="nav__mob-btn"
+                    aria-haspopup="true"
+                    aria-controls="nav__mob-menu"
+                    aria-label="Открыть меню" aria-expanded="false">
+                    <svg width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="2" rx="1" fill="#fff"/><rect y="8" width="24" height="2" rx="1" fill="#fff"/><rect y="16" width="24" height="2" rx="1" fill="#fff"/></svg>
+                </button>
+                <ul id="nav__mob-menu" class="mob-menu color--dark"
+                    role="menu"
+                    aria-labelledby="nav__mob-btn">
+                    <li class="mob-menu__item mob-menu__item--flex" role="none">
+                        <button id="nav__close" class="nav__close" aria-label="Закрыть меню">
+                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" width="24" height="2" rx="1" transform="rotate(45 2 0)" fill="#1F1F24"/><rect x="1" y="17" width="24" height="2" rx="1" transform="rotate(-45 1 17)" fill="#1F1F24"/></svg>
+                        </button>
+                        <a role="menuitem" href="../" class="mob-menu__link" aria-label="Перейти на главную страницу">kurmak.info</a>
+                    </li>
+                    <li role="none" class="mob-menu__item mob-menu__item--mb">
+                        <a role="menuitem" class="mob-menu__link" href="course/">Курс</a>
+                    </li>
+                    <li role="none" class="mob-menu__item">
+                        <a role="menuitem" class="mob-menu__link" href="#write">Связаться</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -91,8 +113,8 @@
             </div>
         </section>
         <section class="write section" id="write">
-            <div class="container fadeInUp wow">
-                <h2>пишите</h2>
+            <div class="container">
+                <h2 class="fadeInUp wow">пишите</h2>
                 <form action="" class="main-form">
                     <div class="main-form__field main-form__field--first">
                         <label for="email" class="main-form__label">Электронная почта</label>
@@ -108,7 +130,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container fadeInUp wow">
+        <div class="container">
             <p class="footer__title">Валерия Курмак</p>
             <p class="footer__text">напишите сообщение в&nbsp;почте, телеграме или&nbsp;фейсбуке</p>
             <nav class="footer__nav" aria-label="Социальные ссылки">

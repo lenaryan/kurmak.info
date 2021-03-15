@@ -25,7 +25,7 @@ p{margin-top:0}
 .offset.slide{display:block;width:calc((100vw - (var(--container))) / 2);flex-shrink:0}
 .slide{scroll-snap-align:start}
 .slider.active{scroll-snap-type:unset}
-.header{position:absolute;color:#fff;left:0;right:0;top:0;z-index:2}
+.header{position:absolute;color:#fff;left:0;right:0;top:0;z-index:5}
 .nav{display:flex;justify-content:space-between;align-items:center;padding-top:40px}
 .nav__item{font-size:1.8em;text-decoration:none;margin-left:30px;font-weight:600}
 .nav__item--logo{padding-left:0;margin-right:auto;margin-left:0}
