@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    :root{
+        --container: 95%;
+    }
     .banner__eye{top:10%}
     .course-top{background-position:right center}
     .reason-list{grid-gap:60px}
