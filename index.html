@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/animate.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <title>Валерия Курмак</title>
@@ -20,7 +21,7 @@
     <main>
         <section role="banner" class="banner">
             <div class="container banner__container">
-                <h1 class="banner__title">Ты можешь сделать мир доступным</h1>
+                <h1 class="banner__title fadeIn wow">Ты можешь сделать мир доступным</h1>
                 <p class="banner__text text">А&nbsp;мы тебе поможем. <a href="#" class="color--mint">Обучим</a> дизайнеров, разработчиков и&nbsp;исследователей. <a href="#" class="color--mint">Проводим аудит</a> цифровой доступности и&nbsp;констультируем компании.</p>
                 <a href="#write" class="btn btn--mint banner__btn">Написать нам</a>
                 <img src="./images/eye.svg" class="banner__eye" alt="" role="presentation">
@@ -28,13 +29,15 @@
         </section>
         <section class="reasons section">
             <div class="container">
-                <h2>зачем?</h2>
+                <h2 class="fadeInUp wow">зачем?</h2>
                 <ol class="reason-list">
                     <li class="reason-list__item reason-list__item--column">
-                        <span class="reason-list__num">1</span>
-                        <h3 class="reason-list__title">+30%&nbsp;аудитории</h3>
-                        <p class="reason-list__text">Люди с&nbsp;инвалидностью берут кредиты, совершают покупки, смотрят кино. Они делают это там, где сервис доступен. То же делают люди старшего возраста и&nbsp;те, кто ограничен временно. Потребность в&nbsp;цифровой доступности когда-то коснётся каждого из&nbsp;нас.</p>
-                        <div class="limit">
+                        <div class="fadeInUp wow">
+                            <span class="reason-list__num">1</span>
+                            <h3 class="reason-list__title">+30%&nbsp;аудитории</h3>
+                            <p class="reason-list__text">Люди с&nbsp;инвалидностью берут кредиты, совершают покупки, смотрят кино. Они делают это там, где сервис доступен. То же делают люди старшего возраста и&nbsp;те, кто ограничен временно. Потребность в&nbsp;цифровой доступности когда-то коснётся каждого из&nbsp;нас.</p>
+                        </div>
+                        <div class="limit fadeInUp wow">
                             <p class="limit__type">Ситуативные</p>
                             <div class="limit__item">
                                 <img class="limit__pic" src="./images/child.svg" role="presentation">
@@ -64,12 +67,12 @@
                             </div>
                         </div>
                     </li>
-                    <li class="reason-list__item">
+                    <li class="reason-list__item fadeInUp wow">
                         <span class="reason-list__num">2</span>
                         <h3 class="reason-list__title">Социальный вклад</h3>
                         <p class="reason-list__text">Можно заниматься благотворительностью, а&nbsp;можно изменить мир, дав человеку почувствовать свою независимость и&nbsp;достоинство через равные возможности к&nbsp;вашему продукту.</p>
                     </li>
-                    <li class="reason-list__item reason-list__item--margin">
+                    <li class="reason-list__item reason-list__item--margin fadeInUp wow">
                         <span class="reason-list__num">3</span>
                         <h3 class="reason-list__title">Ресурсы</h3>
                         <p class="reason-list__text">Бюджет проекта не&nbsp;увеличится, если дизайнеры и&nbsp;разработчики знают, как проектировать доступно. Знания, полученные на&nbsp;курсе, позволят не&nbsp;делать ненужных версий и&nbsp;соответствовать новому ГОСТу от&nbsp;1&nbsp;апреля 2020&nbsp;года.</p>
@@ -79,7 +82,7 @@
         </section>
         <section class="why-me section">
             <div class="container">
-                <h2>почему я</h2>
+                <h2 class="fadeInUp wow">почему я</h2>
                 <div class="why-me__content">
                     <img src="./images/valeriya-kurmak.jpg" alt="Валерия Курмак" class="why-me__img">
                     <p class="why-me__text">За&nbsp;4&nbsp;года работы в&nbsp;Сбербанке провела самое большое исследование о&nbsp;людях с&nbsp;инвалидностью в&nbsp;России, разработала руководство по&nbsp;цифровой доступности для&nbsp;группы компаний Сбера, внедрила доступность в&nbsp;процессы разработки и&nbsp;дизайн-систему.</p>
@@ -88,7 +91,7 @@
             </div>
         </section>
         <section class="write section" id="write">
-            <div class="container">
+            <div class="container fadeInUp wow">
                 <h2>пишите</h2>
                 <form action="" class="main-form">
                     <div class="main-form__field main-form__field--first">
@@ -105,7 +108,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container fadeInUp wow">
             <p class="footer__title">Валерия Курмак</p>
             <p class="footer__text">напишите сообщение в&nbsp;почте, телеграме или&nbsp;фейсбуке</p>
             <nav class="footer__nav" aria-label="Социальные ссылки">
@@ -121,5 +124,14 @@
             </nav>
         </div>
     </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="./wow.min.js"></script>
+    <script>
+        $(() => {new WOW().init();})
+    </script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/animate.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/responsive.css">
     <title>Курс - Валерия Курмак</title>
@@ -20,7 +21,7 @@
     <main>
         <section class="course-top" role="banner">
             <div class="container">
-                <h1 class="course-top__heading">курс про цифровую доступность</h1>
+                <h1 class="course-top__heading fadeIn wow">курс про цифровую доступность</h1>
                 <p class="course-top__sub">от&nbsp;Валерии Курмак</p>
                 <a href="" class="btn btn--dark course-top__btn">Оплатить курс</a>
             </div>
@@ -42,7 +43,7 @@
         </section>
         <section class="about section">
             <div class="container">
-                <h2>о курсе</h2>
+                <h2 class="fadeInUp wow">о курсе</h2>
                 <div class="about__content">
                     <div class="about__left">
                         <p class="about__left-par about__left-par--mb">Даём самое важное при работе с&nbsp;доступностью для менеджера, исследователя, дизайнера и&nbsp;разработчика iOS, Android или Web.</p>
@@ -68,7 +69,7 @@
         </section>
 
         <section class="empathy">
-            <div class="container empathy__container">
+            <div class="container empathy__container fadeInUp wow">
                 <ol class="empathy__title">
                     <li class="empathy__title-item">эмпатия&nbsp;→</li>
                     <li class="empathy__title-item">теория&nbsp;→</li>
@@ -83,7 +84,7 @@
 
         <section class="reviews">
             <div class="container reviews__container">
-                <h2>отзывы</h2>
+                <h2 class="fadeInUp wow">отзывы</h2>
             </div>
             <ul class="reviews__wrap slider">
                 <li class="reviews__item review slide">
@@ -135,7 +136,7 @@
 
         <section class="team">
             <div class="container team__container">
-                <h2>команда</h2>
+                <h2 class="fadeInUp wow">команда</h2>
             </div>
             <div class="team__wrap slider">
                 <div class="team__item person slide">
@@ -196,10 +197,6 @@
             </div>
         </section>
 
-
-
-
-
         <section class="write section" id="write">
             <div class="container">
                 <h2>пишите</h2>
@@ -218,7 +215,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container fadeInUp wow">
             <p class="footer__title">Валерия Курмак</p>
             <p class="footer__text">напишите сообщение в&nbsp;почте, телеграме или&nbsp;фейсбуке</p>
             <nav class="footer__nav" aria-label="Социальные ссылки">
@@ -270,6 +267,14 @@
             setSlider('.reviews__wrap');
             setSlider('.team__wrap');
         })
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="../wow.min.js"></script>
+    <script>
+        $(() => {new WOW().init();})
     </script>
 </body>
 </html>
