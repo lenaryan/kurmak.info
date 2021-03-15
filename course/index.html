@@ -13,8 +13,30 @@
         <div class="container">
             <nav class="nav color--dark">
                 <a href="../" class="nav__item nav__item--logo" aria-label="Перейти на главную страницу">kurmak.info</a>
-                <a href="" class="nav__item">Курс</a>
-                <a href="#" class="nav__item">Связаться</a>
+                <a href="" class="nav__item mob-hide">Курс</a>
+                <a href="#write" class="nav__item mob-hide">Связаться</a>
+                <button id="nav__mob-btn"
+                    aria-haspopup="true"
+                    aria-controls="nav__mob-menu"
+                    aria-label="Открыть меню" aria-expanded="false">
+                    <svg width="24" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="2" rx="1" fill="#fff"/><rect y="8" width="24" height="2" rx="1" fill="#fff"/><rect y="16" width="24" height="2" rx="1" fill="#fff"/></svg>
+                </button>
+                <ul id="nav__mob-menu" class="mob-menu"
+                    role="menu"
+                    aria-labelledby="nav__mob-btn">
+                    <li class="mob-menu__item mob-menu__item--flex" role="none">
+                        <button id="nav__close" class="nav__close" aria-label="Закрыть меню">
+                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" width="24" height="2" rx="1" transform="rotate(45 2 0)" fill="#1F1F24"/><rect x="1" y="17" width="24" height="2" rx="1" transform="rotate(-45 1 17)" fill="#1F1F24"/></svg>
+                        </button>
+                        <a role="menuitem" href="../" class="mob-menu__link" aria-label="Перейти на главную страницу">kurmak.info</a>
+                    </li>
+                    <li role="none" class="mob-menu__item mob-menu__item--mb">
+                        <a role="menuitem" class="mob-menu__link" href="">Курс</a>
+                    </li>
+                    <li role="none" class="mob-menu__item">
+                        <a role="menuitem" class="mob-menu__link" href="#write">Связаться</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -235,50 +257,12 @@
             </nav>
         </div>
     </footer>
-    
-    <script>
-        function setSlider(selector) {
-            const slider = document.querySelector(selector);
-            let isDown = false;
-            let startX;
-            let scrollLeft;
 
-            slider.addEventListener('mousedown', e => {
-                isDown = true;
-                slider.classList.add('active');
-                startX = e.pageX - slider.offsetLeft;
-                scrollLeft = slider.scrollLeft;
-            });
-            slider.addEventListener('mouseleave', _ => {
-                isDown = false;
-                slider.classList.remove('active');
-            });
-            slider.addEventListener('mouseup', _ => {
-                isDown = false;
-                slider.classList.remove('active');
-            });
-            slider.addEventListener('mousemove', e => {
-                if (!isDown) return;
-                e.preventDefault();
-                const x = e.pageX - slider.offsetLeft;
-                const SCROLL_SPEED = 1;
-                const walk = (x - startX) * SCROLL_SPEED;
-                slider.scrollLeft = scrollLeft - walk;
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {            
-            setSlider('.reviews__wrap');
-            setSlider('.team__wrap');
-        })
-    </script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="../wow.min.js"></script>
-    <script>
-        $(() => {new WOW().init();})
-    </script>
+    <script src="../scripts/wow.min.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
