@@ -25,6 +25,13 @@ p{margin-top:0}
 .offset.slide{display:block;width:calc((100vw - (var(--container))) / 2);flex-shrink:0}
 .slide{scroll-snap-align:start}
 .slider.active{scroll-snap-type:unset}
+
+.course-form__output{margin-top: 10px;margin-bottom: 0;font-size: 1.6em;font-weight: 600;display: none;}
+.course-form__output--error{color:red;}
+.course-form--output .course-form__output--success{display: block;}
+.course-form--error .course-form__output--error{display: block;}
+
+
 .header{position:absolute;color:#fff;left:0;right:0;top:0;z-index:5}
 .nav{display:flex;justify-content:space-between;align-items:center;padding-top:40px}
 .nav__item{font-size:1.8em;text-decoration:none;margin-left:30px;font-weight:600}

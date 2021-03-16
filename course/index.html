@@ -54,12 +54,14 @@
                 <p class="course-info__par">На&nbsp;одной конференции рассказала разработчикам Viber, что в&nbsp;обновленной версии кнопка «отправить» в&nbsp;коде не&nbsp;подписана. Это сделало новую версию недоступной для незрячих. Уже на&nbsp;следующий день ребята подписали кнопку и&nbsp;приложение снова стало доступным!</p>
                 <p class="course-info__par course-info__par--mb">В&nbsp;Сбербанке вместе с&nbsp;дизайнерами увеличили контрастность текста. Интерфейс стал доступным для слабовидящих, а&nbsp;компания сэкономила, не&nbsp;делая отдельную бесполезную версию.</p>
                 <h3 class="course-info__heading course-info__heading--mb">Полная программа курса</h3>
-                <form action="" class="course-form">
+                <form action="" class="course-form" id="course-form">
                     <label for="course-email" class="course-form__label">Электронная почта</label>
                     <div class="course-form__fields">
                         <input id="course-email" type="email" class="course-form__email">
-                        <button type="submit" class="btn btn--mint course-form__btn">Получить</button>
+                        <button type="submit" id="course-submit" class="btn btn--mint course-form__btn">Получить</button>
                     </div>
+                    <p class="course-form__output course-form__output--success">Спасибо за интерес!</p>
+                    <p class="course-form__output course-form__output--error">Проверьте адрес ещё раз</p>
                 </form>
             </div>
         </section>
